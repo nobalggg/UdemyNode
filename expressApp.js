@@ -1,5 +1,6 @@
 var express = require('express');
 var hbs = require('hbs');
+const port = process.env.PORT || 3000;
 
 hbs.registerPartials(__dirname+'/views/partials');
 hbs.registerHelper('getCurrentYear',() =>{
@@ -19,5 +20,5 @@ app.get('/about',(request,repsonse)=>{
     repsonse.render('dynamic.hbs');
 });
 
-app.listen(3000);
-console.log('Server is listening at 3000');
+app.listen(port);
+console.log('Server is listening at '+port);
