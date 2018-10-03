@@ -21,7 +21,7 @@ app.get('/about',(request,repsonse)=>{
 });
 
 app.get('/',(req,res)=>{
-    res.send('Hello Nobal, This app is running well, But do you know what your goal is , Its something bigger then this');
+    res.send('Hello Nobal, This app is running well, But do you know what your goal is , Its something bigger than this');
 })
 
 app.listen(port);
