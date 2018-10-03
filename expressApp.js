@@ -20,5 +20,9 @@ app.get('/about',(request,repsonse)=>{
     repsonse.render('dynamic.hbs');
 });
 
+app.get('/',(req,res)=>{
+    res.send('Hello Nobal, This app is running well, But do you know what your goal is , Its something bigger then this');
+})
+
 app.listen(port);
 console.log('Server is listening at '+port);
